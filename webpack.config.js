@@ -3,15 +3,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
+  target: 'web',
   output: {
-    path: path.resolve('./dist'),
+    path: path.resolve('dist'),
     filename: '[name].js',
   },
   devServer: {
     open: true,
     port: 9999,
-    contentBase: './dist',
     hot: true,
+    contentBase: path.resolve('dist'),
   },
   module: {
     rules: [
@@ -34,6 +35,12 @@ module.exports = {
       os: require.resolve('os-browserify/browser'),
       path: require.resolve('path-browserify'),
       buffer: require.resolve('buffer/'),
+    },
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      '@components': path.resolve(__dirname, './src/components/'),
+      '@dummys': path.resolve(__dirname, './src/dummys/'),
+      '@utils': path.resolve(__dirname, './src/utils/'),
     },
   },
 };

@@ -1,5 +1,259 @@
 body {
+  background-color: palegreen;
+}
+
+.tbData {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px double #0a2348;
+  border-bottom: 1px double #0a2348;
+  border-right: 0 hidden;
+  border-left: 0 hidden;
+}
+.tbData th {
+  height: 38px;
+  padding: 5px 10px;
+  border: 1px solid #e5e6e9;
+  background: #f8f9fb;
+  text-transform: uppercase;
+  text-align: left;
+  /*word-break: break-all;*/
+  font-weight: 400;
+  color: #000;
+}
+.tbData:not(.tbList, .tbState) {
+  table-layout: fixed;
+}
+.tbData:not(.tbList) th,
+.tbData:not(.tbState) th {
+  width: 150px;
+  height: 34px;
+}
+.tbData thead th {
+  border-bottom: 1px double #989ca2;
+}
+.tbData td {
+  height: 34px;
+  padding: 5px 10px;
+  border: 1px solid #f1f4f6;
+  border-right-color: #e8edf0;
+  background: #fff;
+  text-align: left;
+  word-break: break-all;
+}
+.tbData td > * {
+  vertical-align: middle;
+}
+.tbData thead th {
+  height: 40px;
+  border-color: #e5e6e9;
+  border-bottom: 1px double #989ca2;
+}
+
+.tbList th,
+.tbList td {
+  text-align: center;
+}
+.tbList:not(.tbWrite) tbody tr:nth-child(even) td {
+  background-color: #f8f9fb;
+}
+.tbWrite {
+  table-layout: fixed;
+}
+.tbWrite td {
+  height: 39px;
+  padding: 4px;
+}
+table + .paging-panel {
+  margin-top: -1px;
+}
+.tbList.tbWrite thead th {
+  padding: 4px;
+}
+.tbList.tbWrite tbody td {
+  vertical-align: top;
+  padding: 4px;
+}
+.tbData .wrap-cselect {
+  width: 100%;
+}
+.tbData .wrap-cselect + .wrap-cselect {
+  margin-top: 4px;
+}
+
+.tbData .tbData {
+  border-top-color: #dbe3e7;
+  border-bottom-color: #dbe3e7;
+  margin: 6px 0 6px 6px;
+  width: calc(100% - 2px);
+}
+.tbData .tbData td,
+.tbData .tbData th {
+  height: 30px;
+  font-size: 12px;
+  border-right-color: #f1f4f6;
+}
+.tbData .tbData thead th {
+  border-bottom-color: #dbe3e7;
+  background-color: #fbfcfd;
+}
+.tbData .tbData tfoot td,
+.tbData .tbData tfoot th {
+  background-color: #fbfcfd;
+  border-top: 1px double #dbe3e7;
+}
+.tbData .tbData tfoot th {
+  text-align: left;
+}
+.tbData .tbData:not(.tbWrite) tr td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tbData .tbList tbody tr td {
+  background: none;
+}
+
+.tbData select {
+  width: 100%;
+  height: 30px;
+  border-color: #dbe3e7;
+  background-color: rgba(0, 50, 70, 0.02);
+}
+.tbData a {
+  color: inherit;
+}
+.tbData img {
+  max-width: 100%;
+}
+.tbData td.price {
+  text-align: right;
+  padding-right: 10px;
+}
+.tbData td.total {
+  border-top-color: #f2f4e3;
+  border-bottom-color: #f2f4e3;
+  background-color: #fffeeb;
+}
+.tbList:not(.tbWrite) tbody tr:nth-child(even) td.total {
+  background-color: #f9f8e7;
+}
+
+.server-wrap_table .tbData tbody tr:hover td {
+  border: 1px double #dceaf7;
+  background-color: rgba(33, 150, 243, 0.1);
+}
+.tbData tbody tr.selected td {
+  border: 1px double #b0d7f4 !important;
+  background-color: rgba(33, 150, 243, 0.3) !important;
+}
+
+.input-radioCheckbox {
+  margin-top: 0;
+  margin-right: 4px;
+}
+.input-radioCheckbox + label {
+  padding-right: 20px;
+}
+
+.tbData .MuiOutlinedInput-inputMultiline,
+.tbData .MuiInputBase-multiline {
+  padding: 0;
+}
+.tbData .MuiFormControl-marginDense {
   margin: 0;
-  background-color: peachpuff;
-  font-size: 20px;
+}
+.tbData .MuiFormControl-marginDense .MuiOutlinedInput-root {
+  border-radius: 0;
+  padding: 0;
+}
+.tbData .MuiOutlinedInput-notchedOutline {
+  border-color: #dbe3e7;
+}
+.tbData .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border: 0;
+}
+.tbData
+  .MuiAutocomplete-inputRoot[class*='MuiOutlinedInput-root'][class*='MuiOutlinedInput-marginDense'] {
+  padding: 0;
+}
+
+.tbWrite-txt {
+  padding-left: 6px;
+}
+
+.tbData .noData {
+  margin: 20px;
+}
+
+.loading {
+  padding: 10px 20px !important;
+}
+.loading img {
+  margin: -1px 10px 0 0;
+  vertical-align: middle;
+}
+
+.noti-table {
+  margin: 10px 0;
+  text-align: right;
+}
+.wrap-table {
+  overflow-x: auto;
+}
+.al-left {
+  text-align: left !important;
+}
+.tbState {
+  border-top: 1px double #0a2348;
+}
+.tbState th,
+.tbState td {
+  text-align: right;
+}
+.tbState th {
+  color: #0b1d3b;
+}
+.tbState thead th {
+  padding: 5px 3px;
+  text-align: center;
+  background-color: #edf0f4;
+  border: 1px solid #c8d1d9;
+  border-top: 0;
+  white-space: nowrap;
+}
+.tbState tbody th {
+  background-color: #edf0f4;
+  border: 1px dotted #c2cad2;
+  border-right: 1px solid #c8d1d9;
+}
+.tbState tbody td {
+  color: #606c7f;
+  border: 1px dotted #d7e1e9;
+}
+.tbState .td-tit {
+  background-color: #f4f7fa;
+}
+.tbState thead .td-tit {
+  font-size: 11px;
+  border-bottom: 1px dotted #c2cad2;
+}
+.tbState thead {
+  border-bottom: 1px double #989ca2;
+}
+.tbState tbody tr.tr-foot th,
+.tbState tbody tr.tr-foot td {
+  background-color: #fffeeb;
+  border-top: 1px double #989ca2;
+  border-bottom: 1px double #0a2348;
+}
+.tbState tfoot th,
+.tbState tfoot td {
+  background-color: #ffebed !important;
+  border: 1px dotted #d7cfd9;
+}
+.tbState tfoot th {
+  border-right: 1px solid #c8c1ca;
+}
+.tbState tfoot td {
+  color: #0a2348;
 }

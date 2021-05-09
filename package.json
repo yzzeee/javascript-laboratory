@@ -7,14 +7,14 @@
     "build-dev": "webpack --mode=development"
   },
   "dependencies": {
-    "css-loader": "^5.2.4",
     "fxjs": "^0.21.2",
     "ip": "^1.1.5",
     "ip-utils": "^2.4.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "ts-react-json-table": "^0.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",

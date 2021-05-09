@@ -1,4 +1,9 @@
 import React from 'react';
+import JsonTable from '@components/JsonTable';
 
-const App = () => <div>Hello React</div>;
+const App = () => (
+  <div>
+    <JsonTable />
+  </div>
+);
 export default App;

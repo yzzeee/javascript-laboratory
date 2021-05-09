@@ -11,6 +11,7 @@ module.exports = {
     open: true,
     port: 9999,
     contentBase: './dist',
+    hot: true,
   },
   module: {
     rules: [

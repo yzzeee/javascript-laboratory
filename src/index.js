@@ -11,6 +11,10 @@ import * as ipUtil from 'ip-utils';
 
 import './styles/index.css';
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
 window.lodash = lodash;
 window.fxjs = fxjs;
 window.S = S;
@@ -23,4 +27,4 @@ window.ip = ip;
 
 window.ipUtil = ipUtil;
 
-console.log('test222');
+ReactDOM.render(<App />, document.getElementById('root'));

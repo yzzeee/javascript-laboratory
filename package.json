@@ -7,6 +7,7 @@
     "build-dev": "webpack --mode=development"
   },
   "dependencies": {
+    "css-loader": "^5.2.4",
     "fxjs": "^0.21.2",
     "ip": "^1.1.5",
     "ip-utils": "^2.4.0",
@@ -18,6 +19,7 @@
     "@babel/preset-env": "^7.14.1",
     "babel-loader": "^8.2.2",
     "buffer": "^6.0.3",
+    "mini-css-extract-plugin": "^1.6.0",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
     "webpack": "^5.36.2",

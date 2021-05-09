@@ -6,8 +6,10 @@ import * as L from 'fxjs/Lazy';
 
 import moment from 'moment';
 
-import ip from "ip";
-import * as ipUtil from "ip-utils";
+import ip from 'ip';
+import * as ipUtil from 'ip-utils';
+
+import './styles/index.css';
 
 window.lodash = lodash;
 window.fxjs = fxjs;
@@ -20,3 +22,5 @@ window.moment = moment;
 window.ip = ip;
 
 window.ipUtil = ipUtil;
+
+console.log('test222');

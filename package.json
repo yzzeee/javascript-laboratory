@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode=development --open  --port=9999",
+    "watch": "webpack --watch",
+    "build-prod": "webpack --mode=production",
+    "build-dev": "webpack --mode=development"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

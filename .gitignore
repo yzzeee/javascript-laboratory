@@ -1,0 +1,8 @@
+node_modules
+
+# Include only index.html in the dist folder
+!/dist/
+/dist/*
+!/dist/index.html
+
+yarn-error.log

@@ -134,3 +134,8 @@ i ｢wdm｣: Failed to compile.
 gg : 첫째줄로 이동
 dG : 전체 삭제
 p : 붙여넣기
+
+# VSCODE
+
+- 파일 > 기본설정 > 설정(CTRL + ,) > zoom 검색
+![001](./images/001.png)

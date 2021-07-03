@@ -13,6 +13,8 @@ module.exports = {
     port: 9999,
     hot: true,
     contentBase: path.resolve('dist'),
+    clientLogLevel: 'error',
+    stats: 'minimal',
   },
   module: {
     rules: [
@@ -41,6 +43,7 @@ module.exports = {
       '@components': path.resolve(__dirname, './src/components/'),
       '@dummys': path.resolve(__dirname, './src/dummys/'),
       '@utils': path.resolve(__dirname, './src/utils/'),
+      '@exercises': path.resolve(__dirname, './src/exercises/'),
     },
   },
 };

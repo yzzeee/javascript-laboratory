@@ -4,7 +4,8 @@
     "start": "webpack serve",
     "watch": "webpack --watch",
     "build-prod": "webpack --mode=production",
-    "build-dev": "webpack --mode=development"
+    "build-dev": "webpack --mode=development",
+    "ts-dev": "ts-node src/do-it-typescript"
   },
   "dependencies": {
     "fxjs": "^0.21.2",
@@ -27,6 +28,8 @@
     "mini-css-extract-plugin": "^1.6.0",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"

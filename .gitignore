@@ -1,11 +1,28 @@
+dist/main.js
 node_modules
+src/dummys
+.idea
 
-# Include only index.html in the dist folder
-!/dist/
-/dist/*
-!/dist/index.html
+# *
 
-!/src/
-/src/dummys
+# !dist
+# !dist/*
 
-yarn-error.log
+
+# !markdowns
+# !markdowns/*
+# !markdowns/*/*
+
+# !npm_packages
+# !npm_packages/*
+
+# !src
+# !src/*
+# !src/*/*
+# src/dummys
+
+# !.*
+# !*.json
+# !README.md
+# !yarn.lock
+# !webpack.config.js

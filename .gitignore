@@ -1,13 +1,15 @@
-dist/main.js
-node_modules
-src/dummys
 .idea
+
+node_modules
+coverage
+
+dist/main.js
+src/dummys
 
 # *
 
 # !dist
 # !dist/*
-
 
 # !markdowns
 # !markdowns/*
